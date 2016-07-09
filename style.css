@@ -12,7 +12,6 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', cursive;
-    box-shadow: inset 0px 0px 45px 2px rgba(0,0,0,0.50);
 }
 
 h1, .h1 {
@@ -32,6 +31,7 @@ h1, .h1 {
     width: auto;
 }
 
+
 .row {
     text-align: center;
 }
@@ -45,11 +45,24 @@ h1, .h1 {
     margin: 15px 0 15px 0;
 }
 
-
-
 .profile-pic {
     height: 120px;
     width: auto;
+}
+
+.profile-stats {
+    border-bottom: 2px dotted #555;
+    margin-bottom: 15px;
+}
+
+.box {
+    border-left: 2px dotted #555;
+}
+
+
+.profile-box {
+    color: #000;
+    
 }
 
 .panel {
@@ -61,19 +74,24 @@ h1, .h1 {
     color: #fff;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 50px;    
+.panel-body {
+    padding: 0;
+    margin: 0;
 }
 
-.footer p {
-    font-weight: 500;
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+/* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
     text-align: center;
-    padding: 10px;
-    color: #0D2636;
+    height: 40px;
 }
 
 /* Big tablets to 1023px (width smaller than the 1140px row */ @media only screen and (min-width: 1200px) { 
