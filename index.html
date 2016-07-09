@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Octodash | Your Github Quick Search</title>
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
@@ -15,8 +16,46 @@
             <h1 class="title">Octodash</h1>
             <small class="copy-small">Your Github Quick Search</small>
         </div>
-        
+        <div class="row">
+            <input type="text" class="form-control" placeholder="Search users..." id="search">
+        </div>
+        <div class="row" id="stats">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <img class="profile-pic" src="img/github-512.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p><strong>Created at: <span>Nov, 2015</span></strong></p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h4>Username: <span>HackerYou</span></h4>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Repos</h4>
+                    </div>
+                    <!-- List group -->
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="Cras justo odio">Cras justo odio</a></li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
     </div>
+    <footer class="footer">
+        <p>API built with <span class="ion-social-octocat"></span> by <a href="https://github.com/flight846">Yazid Ismail</a></p>
+    </footer>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
