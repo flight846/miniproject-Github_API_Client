@@ -26,7 +26,7 @@ function reload() {
             $('.profile-pic').remove();
             $('#avatar').append('<img class="profile-pic" src="'+data.avatar_url+'">');
             $('#repo-count').html(''+data.public_repos+' <br/>Repos');
-            $('#create-date').html('<strong>Updated at: <span>'+data.created_at+'</span></strong>');
+            $('#create-date').html('<strong>Created at: <span>'+data.created_at+'</span></strong>');
             $('#update-date').html('<strong>Updated at: <span>'+data.updated_at+'</span></strong>');
         })
         
