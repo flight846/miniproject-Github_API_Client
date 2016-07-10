@@ -40,6 +40,6 @@ $('#search-users').click(function(){
     reload();
 })
 
-$('#new-user, #octodash').click(function(){
+$('#new-user, #new-user1, #octodash').click(function(){
     window.location.reload();
 })
