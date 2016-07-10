@@ -31,8 +31,12 @@ function reload() {
         })
         
         // Get activity count
-        $.get('https://api.github.com/users/'+user+'/received_events')     .done(function(data){
-                $('#activity-count').html(''+data.length+' <br/>Activities');
+        $.get('https://api.github.com/users/'+user+'/events')     .done(function(data){
+            $('#activity-count').html(''+data.length+' <br/>Commits');
+            
+            data.forEach( function(datum) {
+                    $('#commits').append('<li class="list-group-item"><a href="'+datum.repo.url+'" target="_blank">'+datum.repo.name+' | <span><small>'+datum.payload.commits[0].message+'</small></span></li>')
+                })   
         })
 }
 
