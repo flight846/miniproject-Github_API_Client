@@ -11,7 +11,7 @@ html, body {
     background-color: #E88C0C;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', 'Arial', sans-serif, serif;
 }
 
 h1, .h1 {
@@ -111,9 +111,6 @@ h1, .h1 {
 }
 
 /* Small tablets to big tablets from 768 to 1023px */ @media only screen and (max-width: 1023px) {  
-    * {
-        margin: 10px;
-    }
     
     .col-md-3 {
         padding: 0;
@@ -121,11 +118,32 @@ h1, .h1 {
     .col-md-9 {
         padding: 0;
     }
+    
+    #new-user {
+        opacity: 0;
+    }
+    
+    #new-user1 {
+        opacity: 1;
+    }
+    
+    #repos li {
+        margin: 0;
+    }
 }
 
 /* Small phones to small tablets from 481 to 767px */ @media only screen and (max-width: 767px) {
+    
     #new-user {
         opacity: 0;
+    }
+    
+    #new-user1 {
+        opacity: 1;
+    }
+    
+    #repos li {
+        margin: 0;
     }
 }
 
