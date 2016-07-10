@@ -13,7 +13,7 @@
     <div id="wrap">
         <div class="container">
             <div class="row">
-                <a href="#"><img class="image center" src="img/github-512.png"></a>
+                <a href="#"><img class="image center" src="img/github-512.png" id="octodash"></a>
                 <h1 class="title">Octodash</h1>
                 <small class="copy-small">Your Github Quick Search</small>
             </div>
@@ -40,12 +40,15 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6" id="create-date">
-                            <p><strong>Created at: <span>Nov, 2015</span></strong></p>
+                        <div class="col-md-6">
+                            <p id="create-date"><strong>Created at: <span>Nov, 2015</span></strong></p>
                         </div>
-                        <div class="col-md-6" id="update-date">
-                            <p><strong>Updated at: <span>Nov, 2015</span></strong></p>
+                        <div class="col-md-6">
+                            <p id="update-date"><strong>Updated at: <span>Nov, 2015</span></strong></p>
                         </div> 
+                    </div>
+                    <div class="row" id="new-user">
+                        <button class="btn btn-danger">New Users</button>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -64,42 +67,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Followers</a>
-                                </h4>
-                            </div>
-                            <div id="collapseTen" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Cras justo odio</li>
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        <li class="list-group-item">Morbi leo risus</li>
-                                        <li class="list-group-item">Porta ac consectetur ac</li>
-                                        <li class="list-group-item">Vestibulum at eros</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Commits</a>
-                                </h4>
-                            </div>
-                            <div id="collapseEleven" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Cras justo odio</li>
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        <li class="list-group-item">Morbi leo risus</li>
-                                        <li class="list-group-item">Porta ac consectetur ac</li>
-                                        <li class="list-group-item">Vestibulum at eros</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>  
                     </div>
                 </div>
             </div> 
@@ -107,7 +74,9 @@
         <div id="push"></div>
     </div>
     <footer id="footer">
-        <p>API built with <span class="ion-social-octocat"></span> by <a href="https://github.com/flight846">Yazid Ismail</a></p>
+        <div class="container">
+            <p>API built with <span class="ion-social-octocat"></span> by <a href="https://github.com/flight846">Yazid Ismail</a></p>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
