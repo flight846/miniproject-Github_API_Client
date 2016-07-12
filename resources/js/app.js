@@ -8,6 +8,9 @@ var searchUser = $('#search');
 
 function reload() {
     var user = searchUser.val();
+        if ($( "#repos, #commits:has(li)" )) {
+             $('#repos, #commits').empty();
+        }
         // get repos
         $.get('https://api.github.com/users/'+user+'/repos')
             .done(function(data){

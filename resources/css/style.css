@@ -94,6 +94,7 @@ h1, .h1 {
 
 /* Set the fixed height of the footer here */
 #push, #footer {
+    margin-top: 10px;
     text-align: center;
     height: 40px;
 }
@@ -124,20 +125,8 @@ h1, .h1 {
         padding: 0;
     }
     
-    #new-user {
-        opacity: 0;
-    }
-    
-    #new-user1 {
-        opacity: 0;
-    }
-    
     #repos li {
         margin: 0;
-    }
-
-    .btn-danger {
-        width: 100%;
     }
 }
 
@@ -147,16 +136,8 @@ h1, .h1 {
         opacity: 0;
     }
     
-    #new-user1 {
-        opacity: 1;
-    }
-    
     #repos li {
         margin: 0;
-    }
-
-    .btn-danger {
-        width: 100%;
     }
 }
 
