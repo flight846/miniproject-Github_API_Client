@@ -14,6 +14,7 @@ function reload() {
         // get repos
         $.get('https://api.github.com/users/'+user+'/repos')
             .done(function(data){
+                $('hr, .col-md-3, .col-md-9').removeClass("hide")
                 data.forEach( function(datum) {
                     $('#repos').append('<li class="list-group-item"><a href="'+datum.html_url+'" target="_blank">'+datum.name+'</li>')
                 })
